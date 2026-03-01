@@ -1,0 +1,32 @@
+{
+    "name": "bitespeed-backend-task",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Identity reconciliation service",
+    "main": "dist/server.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "start": "node dist/server.js",
+        "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+        "test": "jest --runInBand",
+        "test:watch": "jest --watch"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "pg": "^8.13.0",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/jest": "^29.5.13",
+        "@types/node": "^22.7.4",
+        "@types/pg": "^8.11.10",
+        "@types/supertest": "^6.0.2",
+        "jest": "^29.7.0",
+        "supertest": "^7.0.0",
+        "ts-jest": "^29.2.5",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.6.2"
+    }
+}
